@@ -1,0 +1,280 @@
+ <% 
+ var junio=757797;
+ var ca=0.0,insa=0.0,nda=0,nds=0,fcr=0,av=0;
+
+ 
+ if(Number(calidad) > variables[0]._0 && Number(calidad) < variables[0]._30)
+   {
+   		ca=(30/(variables[0]._30-variables[0]._0))*calidad;
+   		ca-=(30/(variables[0]._30-variables[0]._0)*variables[0]._0);
+   		console.log("calidad "+calidad
+ 		+" "+variables[0]._0
+ 		+" "+variables[0]._30
+ 		+" "+(30/(variables[0]._30-variables[0]._0))*calidad
+ 		+" "+(30/(variables[0]._30-variables[0]._0)*variables[0]._0)
+ 		+" "+ca);
+
+   }else if(Number(calidad) > variables[0]._30 && Number(calidad) < variables[0]._60){
+   		ca=(20/(variables[0]._60-variables[0]._30))*calidad;
+   		ca-=(20/(variables[0]._60-variables[0]._30)*variables[0]._30)-30;
+   		console.log("calidad "+calidad
+ 		+" "+variables[0]._30
+ 		+" "+variables[0]._60
+ 		+" "+(20/(variables[0]._60-variables[0]._30))*calidad
+ 		+" "+(20/(variables[0]._60-variables[0]._30)*variables[0]._30)-30
+ 		+" "+ca);
+
+   }else if(Number(calidad) > variables[0]._60 && Number(calidad) < variables[0]._80){
+   		ca=(10/(variables[0]._80-variables[0]._60))*calidad;
+   		ca-=(10/(variables[0]._80-variables[0]._60)*variables[0]._60)-60;
+   		console.log("calidad "+calidad
+ 		+" "+variables[0]._60
+ 		+" "+variables[0]._80
+ 		+" "+(10/(variables[0]._80-variables[0]._60))*calidad
+ 		+" "+(10/(variables[0]._80-variables[0]._60)*variables[0]._60)-60
+ 		+" "+ca);
+
+   }else if(Number(calidad) > variables[0]._80 && Number(calidad) < variables[0]._100){
+   		ca=(20/(variables[0]._100-variables[0]._80))*calidad;
+   		ca-=(20/(variables[0]._100-variables[0]._80)*variables[0]._80)-80;
+   		console.log("calidad "+calidad
+ 		+" "+variables[0]._80
+ 		+" "+variables[0]._100
+ 		+" "+(20/(variables[0]._100-variables[0]._80))*calidad
+ 		+" "+(20/(variables[0]._100-variables[0]._80)*variables[0]._80)-80
+ 		+" "+ca);
+
+   }else if(Number(calidad) > variables[0]._100 && Number(calidad) < variables[0]._120){
+   		ca=(20/(variables[0]._120-variables[0]._100))*calidad;
+   		ca-=(20/(variables[0]._120-variables[0]._100)*variables[0]._100)-100;
+   		console.log("calidad "+calidad
+ 		+" "+variables[0]._100
+ 		+" "+variables[0]._120
+ 		+" "+(20/(variables[0]._120-variables[0]._100))*calidad
+ 		+" "+(20/(variables[0]._120-variables[0]._100)*variables[0]._100)-100
+ 		+" "+ca);
+
+   }else if(Number(calidad) > variables[0]._120 && Number(calidad) < variables[0]._150){
+   		ca=(20/(variables[0]._150-variables[0]._120))*calidad;
+   		ca-=(20/(variables[0]._150-variables[0]._120)*variables[0]._120)-120;
+   		console.log("calidad "+calidad
+ 		+" "+variables[0]._120
+ 		+" "+variables[0]._150
+ 		+" "+(20/(variables[0]._150-variables[0]._120))*calidad
+ 		+" "+(20/(variables[0]._150-variables[0]._120)*variables[0]._120)-120
+ 		+" "+ca);
+
+   }else if(Number(calidad) >variables[0]._150){
+   		ca=150;
+   		console.log("calidad "+calidad
+ 		+" "+variables[0]._120
+ 		+" "+variables[0]._150
+ 		+" "+(20/(variables[0]._150-variables[0]._120))*calidad
+ 		+" "+(20/(variables[0]._150-variables[0]._120)*variables[0]._120)-120
+ 		+" "+ca);
+
+   }else {ca=0;}
+ 
+  ///insa
+ 
+if(Number(insatisfechos) < variables[1]._0 && Number(insatisfechos) > variables[1]._30)
+   {
+   		insa=(30/(variables[1]._30-variables[1]._0))*insatisfechos;
+   		insa-=(30/(variables[1]._30-variables[1]._0)*variables[1]._0);
+   		console.log("insatisfechos "+insatisfechos
+ 		+" "+variables[1]._0
+ 		+" "+variables[1]._30
+ 		+" "+(30/(variables[1]._30-variables[1]._0))*insatisfechos
+ 		+" "+(30/(variables[1]._30-variables[1]._0)*variables[1]._0)
+ 		+" "+insa);
+
+   }else if(Number(insatisfechos) < variables[1]._30 && Number(insatisfechos) > variables[1]._60){
+   		insa=(20/(variables[1]._60-variables[1]._30))*insatisfechos;
+   		insa-=(20/(variables[1]._60-variables[1]._30)*variables[1]._30)-30;
+   		
+
+   }else if(Number(insatisfechos) < variables[1]._60 && Number(insatisfechos) > variables[1]._80){
+   		insa=(10/(variables[1]._80-variables[1]._60))*insatisfechos;
+   		insa-=(10/(variables[1]._80-variables[1]._60)*variables[1]._60)-60;
+   		
+ 		
+
+   }else if(Number(insatisfechos) < variables[1]._80 && Number(insatisfechos) > variables[1]._100){
+   		insa=(20/(variables[1]._100-variables[1]._80))*insatisfechos;
+   		insa-=(20/(variables[1]._100-variables[1]._80)*variables[1]._80)-80;
+   		
+
+   }else if(Number(insatisfechos) < variables[1]._100 && Number(insatisfechos) > variables[1]._120){
+   		insa=(20/(variables[1]._120-variables[1]._100))*insatisfechos;
+   		insa-=(20/(variables[1]._120-variables[1]._100)*variables[1]._100)-100;
+   		
+
+   }else if(Number(insatisfechos) < variables[1]._120 && Number(insatisfechos) > variables[1]._150){
+   		insa=(20/(variables[1]._150-variables[1]._120))*insatisfechos;
+   		insa-=(20/(variables[1]._150-variables[1]._120)*variables[1]._120)-120;
+   		
+
+   }else if(Number(insatisfechos) < variables[1]._150){
+   		insa=150;
+   		
+   }else {insa=0;}
+ ///nda
+ if(Number(NDA) > variables[2]._0 && Number(NDA) < variables[2]._30)
+   {
+   		nda=(30/(variables[2]._30-variables[2]._0))*NDA;
+   		nda-=(30/(variables[2]._30-variables[2]._0)*variables[2]._0);
+   		
+
+   }else if(Number(NDA) > variables[2]._30 && Number(NDA) < variables[2]._60){
+   		nda=(20/(variables[2]._60-variables[2]._30))*NDA;
+   		nda-=(20/(variables[2]._60-variables[2]._30)*variables[2]._30)-30;
+   		
+   }else if(Number(NDA) > variables[2]._60 && Number(NDA) < variables[2]._80){
+   		nda=(10/(variables[2]._80-variables[2]._60))*NDA;
+   		nda-=(10/(variables[2]._80-variables[2]._60)*variables[2]._60)-60;
+   		
+
+   }else if(Number(NDA) > variables[2]._80 && Number(NDA) < variables[2]._100){
+   		nda=(20/(variables[2]._100-variables[2]._80))*NDA;
+   		nda-=(20/(variables[2]._100-variables[2]._80)*variables[2]._80)-80;
+   		
+
+   }else if(Number(NDA) > variables[2]._100 && Number(NDA) < variables[2]._120){
+   		nda=(20/(variables[2]._120-variables[2]._100))*NDA;
+   		nda-=(20/(variables[2]._120-variables[2]._100)*variables[2]._100)-100;
+   		
+
+   }else if(Number(NDA) > variables[2]._120 && Number(NDA) < variables[2]._150){
+   		nda=(20/(variables[2]._150-variables[2]._120))*NDA;
+   		nda-=(20/(variables[2]._150-variables[2]._120)*variables[2]._120)-120;
+   		
+
+   }else if(Number(NDA) >variables[2]._150){
+   		nda=150;
+   		
+
+   }else {nda=0;}
+    
+  ///nds
+ if(Number(NDS) > variables[3]._0 && Number(NDS) < variables[3]._30)
+   {
+   		nds=(30/(variables[3]._30-variables[3]._0))*NDS;
+   		nds-=(30/(variables[3]._30-variables[3]._0)*variables[3]._0);
+   		
+
+   }else if(Number(NDS) > variables[3]._30 && Number(NDS) < variables[3]._60){
+   		nds=(20/(variables[3]._60-variables[3]._30))*NDS;
+   		nds-=(20/(variables[3]._60-variables[3]._30)*variables[3]._30)-30;
+   		
+   }else if(Number(NDS) > variables[3]._60 && Number(NDS) < variables[3]._80){
+   		nds=(10/(variables[3]._80-variables[3]._60))*NDS;
+   		nds-=(10/(variables[3]._80-variables[3]._60)*variables[3]._60)-60;
+   		
+
+   }else if(Number(NDS) > variables[3]._80 && Number(NDS) < variables[3]._100){
+   		nds=(20/(variables[3]._100-variables[3]._80))*NDS;
+   		nds-=(20/(variables[3]._100-variables[3]._80)*variables[3]._80)-80;
+   		
+
+   }else if(Number(NDS) > variables[3]._100 && Number(NDS) < variables[3]._120){
+   		nds=(20/(variables[3]._120-variables[3]._100))*NDS;
+   		nds-=(20/(variables[3]._120-variables[3]._100)*variables[3]._100)-100;
+   		
+
+   }else if(Number(NDS) > variables[3]._120 && Number(NDS) < variables[3]._150){
+   		nds=(20/(variables[3]._150-variables[3]._120))*NDS;
+   		nds-=(20/(variables[3]._150-variables[3]._120)*variables[3]._120)-120;
+   		
+
+   }else if(Number(NDS) >variables[3]._150){
+   		nds=150;
+   		
+
+   }else {nds=0;}
+    
+///fcr
+ if(Number(FCR) > variables[3]._0 && Number(FCR) < variables[3]._30)
+   {
+   		fcr=(30/(variables[3]._30-variables[3]._0))*FCR;
+   		fcr-=(30/(variables[3]._30-variables[3]._0)*variables[3]._0);
+   		
+
+   }else if(Number(FCR) > variables[3]._30 && Number(FCR) < variables[3]._60){
+   		fcr=(20/(variables[3]._60-variables[3]._30))*FCR;
+   		fcr-=(20/(variables[3]._60-variables[3]._30)*variables[3]._30)-30;
+   		
+   }else if(Number(FCR) > variables[3]._60 && Number(FCR) < variables[3]._80){
+   		fcr=(10/(variables[3]._80-variables[3]._60))*FCR;
+   		fcr-=(10/(variables[3]._80-variables[3]._60)*variables[3]._60)-60;
+   		
+
+   }else if(Number(FCR) > variables[3]._80 && Number(FCR) < variables[3]._100){
+   		fcr=(20/(variables[3]._100-variables[3]._80))*FCR;
+   		fcr-=(20/(variables[3]._100-variables[3]._80)*variables[3]._80)-80;
+   		
+
+   }else if(Number(FCR) > variables[3]._100 && Number(FCR) < variables[3]._120){
+   		fcr=(20/(variables[3]._120-variables[3]._100))*FCR;
+   		fcr-=(20/(variables[3]._120-variables[3]._100)*variables[3]._100)-100;
+   		
+
+   }else if(Number(FCR) > variables[3]._120 && Number(FCR) < variables[3]._150){
+   		fcr=(20/(variables[3]._150-variables[3]._120))*FCR;
+   		fcr-=(20/(variables[3]._150-variables[3]._120)*variables[3]._120)-120;
+   		
+
+   }else if(Number(FCR) >variables[3]._150){
+   		fcr=150;
+   		
+
+   }else {fcr=0;}
+  
+///av
+ 
+if(Number(AV) < variables[1]._0 && Number(AV) > variables[1]._30)
+   {
+   		av=(30/(variables[1]._30-variables[1]._0))*AV;
+   		av-=(30/(variables[1]._30-variables[1]._0)*variables[1]._0);
+   		
+
+   }else if(Number(AV) < variables[1]._30 && Number(AV) > variables[1]._60){
+   		av=(20/(variables[1]._60-variables[1]._30))*AV;
+   		av-=(20/(variables[1]._60-variables[1]._30)*variables[1]._30)-30;
+   		
+
+   }else if(Number(AV) < variables[1]._60 && Number(AV) > variables[1]._80){
+   		av=(10/(variables[1]._80-variables[1]._60))*AV;
+   		av-=(10/(variables[1]._80-variables[1]._60)*variables[1]._60)-60;
+   		
+ 		
+
+   }else if(Number(AV) < variables[1]._80 && Number(AV) > variables[1]._100){
+   		av=(20/(variables[1]._100-variables[1]._80))*AV;
+   		av-=(20/(variables[1]._100-variables[1]._80)*variables[1]._80)-80;
+   		
+
+   }else if(Number(AV) < variables[1]._100 && Number(AV) > variables[1]._120){
+   		av=(20/(variables[1]._120-variables[1]._100))*AV;
+   		av-=(20/(variables[1]._120-variables[1]._100)*variables[1]._100)-100;
+   		
+
+   }else if(Number(AV) < variables[1]._120 && Number(AV) > variables[1]._150){
+   		av=(20/(variables[1]._150-variables[1]._120))*AV;
+   		av-=(20/(variables[1]._150-variables[1]._120)*variables[1]._120)-120;
+   		
+
+   }else if(Number(AV) < variables[1]._150){
+   		av=150;
+   		
+   }else {av=0;}
+
+ %>
+ <div>Indicador calidad = <%= ca%></div>
+ <div>Indicador insatisfechos = <%= insa%></div>
+ <div>Indicador NDA = <%= nda%></div>
+ <div>Indicador NDS = <%= nds%></div>
+ <div>Indicador FCR = <%= fcr%></div>
+ <div>Indicador AV/Boletintes = <%= av%></div>
+<p>
+	<a href="/variables">Volver</a>
+</p>

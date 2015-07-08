@@ -1,0 +1,44 @@
+<div class="container">
+    <table class="responsive-table">
+    <caption>Top 1 Simulador Variable</caption>
+    <thead>
+      <tr>
+        <th scope="col">Indicador</th>
+        <th scope="col">Peso</th>
+        <th scope="col">0</th>
+        <th scope="col">30</th>
+        <th scope="col">50</th>
+        <th scope="col">60</th>
+        <th scope="col">80</th>
+        <th scope="col">100</th>
+        <th scope="col">120</th>
+        <th scope="col">150</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td colspan="7">Datos simulados</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <% var i; for (i=0; i < variables.length; i++) { %>
+      <tr>
+       <td><%= variables[i].indicador%></td>
+       <td><%= variables[i].peso%></td>
+       <td><%= variables[i]._0%></td>
+       <td><%= variables[i]._30%></td>
+       <td><%= variables[i]._50%></td>
+       <td><%= variables[i]._60%></td>
+       <td><%= variables[i]._80%></td>
+       <td><%= variables[i]._100%></td>
+       <td><%= variables[i]._120%></td>
+       <td><%= variables[i]._150%></td> 
+       <td><a href="variables/<%= variables[i].id %>/edit"><button>editar</button></a></td>      
+      </tr>
+      <%}%>
+      
+      
+    </tbody>
+  </table>
+</div>
+<a href="/calcular"><button>Calcular</button></a>
