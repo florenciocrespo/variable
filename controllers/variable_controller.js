@@ -92,7 +92,13 @@ exports.create = function(req,res){
       NDA = req.body.NDA,
       NDS = req.body.NDS,
       FCR = req.body.FCR,
-      AV = req.body.AV;
+      AV = req.body.AV,
+      calidadI = req.body.calidadI,
+      insatisfechosI = req.body.insatisfechosI,
+      NDAI = req.body.NDAI,
+      NDSI = req.body.NDSI,
+      FCRI = req.body.FCRI,
+      AVI = req.body.AVI;
   // Quick example
    models.Variable.findAll().then(
       function(variables) {
@@ -102,7 +108,13 @@ exports.create = function(req,res){
           NDA: NDA,
           NDS: NDS,
           FCR: FCR,
-          AV: AV, 
+          AV: AV,
+          calidadI: calidadI,
+          insatisfechosI: insatisfechosI,
+          NDAI: NDAI,
+          NDSI: NDSI,
+          FCRI: FCRI,
+          AVI: AVI,
           errors: []});
       }
     ).catch(function(error) { next(error);})
@@ -115,3 +127,4 @@ exports.create = function(req,res){
  // res.render('variables/new');
   
 };
+
