@@ -8,46 +8,46 @@ module.exports = function(sequelize, DataTypes) {
                  validate: { notEmpty: {msg: "-> Falta Pregunta"}}
             },
               peso: {
-              	 type: DataTypes.INTEGER,
+              	 type: DataTypes.REAL,
                  validate: { notEmpty: {msg: "-> Falta Respuesta"}}
             },
               _0: {
-                type: DataTypes.INTEGER,
+                type: DataTypes.REAL,
                 //defaultValue: "otros",
                 validate: { notEmpty: {msg: "-> Falta Tematica"}}
              },
               _30: {
-                type: DataTypes.INTEGER,
+                type: DataTypes.REAL,
                 //defaultValue: "otros",
                 validate: { notEmpty: {msg: "-> Falta Tematica"}}
              },
               _50: {
-                type: DataTypes.INTEGER,
+                type: DataTypes.REAL,
                 //defaultValue: "otros",
                 validate: { notEmpty: {msg: "-> Falta Tematica"}}
               },
               _60: {
-                type: DataTypes.INTEGER,
+                type: DataTypes.REAL,
                 //defaultValue: "otros",
                 validate: { notEmpty: {msg: "-> Falta Tematica"}}
              },
               _80: {
-                type: DataTypes.INTEGER,
+                type: DataTypes.REAL,
                 //defaultValue: "otros",
                 validate: { notEmpty: {msg: "-> Falta Tematica"}}
               },
               _100: {
-                type: DataTypes.INTEGER,
+                type: DataTypes.REAL,
                 //defaultValue: "otros",
                 validate: { notEmpty: {msg: "-> Falta Tematica"}}
               },
               _120: {
-                type: DataTypes.INTEGER,
+                type: DataTypes.REAL,
                 //defaultValue: "otros",
                 validate: { notEmpty: {msg: "-> Falta Tematica"}}
               },
               _150: {
-                type: DataTypes.INTEGER,
+                type: DataTypes.REAL,
                 //defaultValue: "otros",
                 validate: { notEmpty: {msg: "-> Falta Tematica"}}
               }
