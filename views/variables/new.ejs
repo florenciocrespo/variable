@@ -1,7 +1,8 @@
-<div class="container">
-<form  method="post" action="/calcular" > 
+<form class="contact_form" method="post" action="/calcular" > 
+
 <table class="responsive-table">
-    <caption>Top 3 Simulador Variable EE.CC</caption>
+
+    <caption>Top 2 Simulador Variable EE.CC</caption>
     <thead>
       <tr>
         <th colspan=2>Julio</th>
@@ -14,55 +15,75 @@
         <td colspan="7">Datos simulados</td>
       </tr>
     </tfoot>
+
     <tbody>
     <tr>
     <td>
-        <label for="eecc">ATENTO:</label> </br> 
+       <ul>
+       <li>
+        <label for="eecc">ATENTO:</label>
+        <span class="required_notification">* Campos obligatorios</span>
+        </li>
+        <li>
 		<label for="calidad">Calidad:</label>
-		<input type="text" id="calidad" name="calidad" value="8.57" value= />
-		</br>
+		<input class="ejemplo" type="text" id="calidad" name="calidad" value="8.57" />
+		<span class="form_hint">Formato separador decimal use el punto .</span>
+		</li>
+		<li>
 		<label for="insatisfechos">Insatisfechos:</label>
-		<input type="text" id="insatisfechos" name="insatisfechos" value="4.77" /></br>
+		<input class="ejemplo" type="text" id="insatisfechos" name="insatisfechos" value="4.77" /></li>
+		<li>
 		<label for="NDA">NDA:</label>
-		<input type="text" id="NDA" name="NDA" value="90" /></br>
+		<input class="ejemplo" type="text" id="NDA" name="NDA" value="90" /></li>
+		<li>
 		<label for="NDS">NDS:</label>
-		<input type="text" id="NDS" name="NDS" value="80" /></br>
-		<label for="FCR">FCR:</label>
-		<input type="text" id="FCR" name="FCR" value="76" /></br>
-		<label for="AV">AV:</label>
-		<input type="text" id="AV" name="AV" value="20" /></br>
-
+		<input class="ejemplo" type="text" id="NDS" name="NDS" value="80" /></li>
+		<li><label for="FCR">FCR:</label>
+		<input class="ejemplo" type="text" id="FCR" name="FCR" value="76" /></li>
+		<li><label for="AV">AV:</label>
+		<input class="ejemplo" type="text" id="AV" name="AV" value="20" /></li>
+      </ul>
      </td>
      <td>
-        <label for="eecc">INELCOM:</label> </br> 
+     <ul>
+     <li>     
+        <label for="eecc">INELCOM:</label>
+        <span class="required_notification">* Campos obligatorios</span> 
+        </li> 
+        <li>
 		<label for="calidadI">Calidad:</label>
-		<input type="text" id="calidadI" name="calidadI" value="8.55" value= />
-		</br>
+		<input class="ejemplo" type="text" id="calidadI" name="calidadI" value="8.55" />
+		</li>
+		<li>
 		<label for="insatisfechosI">Insatisfechos:</label>
-		<input type="text" id="insatisfechosI" name="insatisfechosI" value="4.5" /></br>
+		<input class="ejemplo" type="text" id="insatisfechosI" name="insatisfechosI" value="4.5" /></li>
+		<li>
 		<label for="NDAI">NDA:</label>
-		<input type="text" id="NDAI" name="NDAI" value="87,47" /></br>
-		<label for="NDSI">NDS:</label>
-		<input type="text" id="NDSI" name="NDSI" value="63" /></br>
-		<label for="FCRI">FCR:</label>
-		<input type="text" id="FCRI" name="FCRI" value="83" /></br>
-		<label for="AVI">AV:</label>
-		<input type="text" id="AVI" name="AVI" value="7" /></br>
-
+		<input class="ejemplo" type="text" id="NDAI" name="NDAI" value="87,47" /></li>
+		<li><label for="NDSI">NDS:</label>
+		<input class="ejemplo" type="text" id="NDSI" name="NDSI" value="63" /></li>
+		<li><label for="FCRI">FCR:</label>
+		<input class="ejemplo" type="text" id="FCRI" name="FCRI" value="83" /></li>
+		<li><label for="AVI">AV:</label>
+		<input class="ejemplo" type="text" id="AVI" name="AVI" value="7" /></li>
+      </ul>
 	    
 		
      </td>
-     </tr>
-	</tbody>		
- </table>
- <a href="/variables"><button type="button">Cancelar</button></a>
- <input name="eecc" type="submit" value="Lanzar" />
-</form>		
-</div>
 
+     </tr>
+	</tbody>
+			
+ </table>
  
+ <button class="submit" type="submit">Lanzar</button>
+
+</form>		
+<br>
 <p>
 	<a href="/variables">Volver</a>
 </p>
+ 
+
 
 	
