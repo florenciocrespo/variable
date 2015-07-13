@@ -33,7 +33,7 @@ exports.index = function(req, res) {
     )
   }else{
     models.Variable.findAll({
-       // order : 'indicador ASC'
+        order : 'id ASC'
       }
     ).then(
       function(variables) {
@@ -124,7 +124,7 @@ exports.create = function(req,res){
   // console.log(JSON.stringify(req.body));
 
    
- // res.render('variables/new');
+
   
 };
 

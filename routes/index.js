@@ -24,12 +24,6 @@ router.get('/variables/:variableId(\\d+)/edit',   variableController.edit);
 router.put('/variables/:variableId(\\d+)',        variableController.update);
 
 
-//router.get('/variables/eeccs/new'	,  eeccController.new);
-//router.post('/variables/eeccs'	,      eeccController.create);
-//router.get('/variables/eeccs/:eeccId(\\d+)/publish',	 eeccController.publish);
-
-
-
 //ver BD
 router.get('/db' , 								  dbController.show);
 
