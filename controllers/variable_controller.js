@@ -72,7 +72,12 @@ exports.update = function(req, res) {
     } else {
      req.variable// save: guarda campos  en DB
      .save( {fields: ["peso", "_0", "_30", "_50", "_60", "_80", "_100", "_120", "_150"]})
-     .then( function(){ res.redirect('/variables');});
+     .then( 
+       models.Variable.findAll({
+        order : 'id ASC'
+      }
+    ).then(
+      function(){ res.redirect('/variables');}));
      } // Redirección HTTP a lista de preguntas (URL relativo)
   }
  );
