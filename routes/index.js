@@ -3,7 +3,7 @@ var router = express.Router();
 
 var variableController = require('../controllers/variable_controller');
 var dbController	= require('../controllers/db_controller');
-//var eeccController 	= require('../controllers/eecc_controller');
+
 
 
 /* GET home page. */
@@ -19,7 +19,6 @@ router.post('/calcular',                   variableController.create); // crear 
 
 // Definición de rutas de /variables
 router.get('/variables',                          variableController.index);
-//router.get('/variables/show',                     variableController.show);
 router.get('/variables/:variableId(\\d+)/edit',   variableController.edit);
 router.put('/variables/:variableId(\\d+)',        variableController.update);
 
