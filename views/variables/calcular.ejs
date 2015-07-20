@@ -1,10 +1,14 @@
  <% 
- var julioA=757797,julioI=517257;
+ var julioA=757797,julioI=517257,julioNtA=174049;
  var ca=0,insa=0,nda=0,nds=0,fcr=0,av=0;
+ var caNt=0,insaNt=0,ndaNt=0,ndsNt=0,fcrNt=0,avNt=0;
  var caI=0,insaI=0,ndaI=0,ndsI=0,fcrI=0,avI=0;
  var sa=0,sav=0,insav=0;
+ var saNt=0,savNt=0,insavNt=0;
  var cacc=0,ndav=0,ndsv=0;
+ var caccNt=0,ndavNt=0,ndsvNt=0;
  var cages=0,fcrv=0,avv=0;
+ var cagesNt=0,fcrvNt=0,avvNt=0;
  var saI=0,caIv=0,insaIv=0;
  var caccI=0,ndaIv=0,ndsIv=0;
  var cagesI=0,fcrIv=0,avIv=0;
@@ -539,8 +543,273 @@ if(Number(AVI) < variables[i]._0 && Number(AVI) > variables[i]._30)
    }else {avI=0;}
 
       break;
+      case 7:
+      if(Number(calidadNt) > variables[i]._0 && Number(calidadNt) < variables[i]._30)
+   {
+         caNt=(30/(variables[i]._30-variables[i]._0))*calidadNt;
+         caNt-=(30/(variables[i]._30-variables[i]._0)*variables[i]._0);
+         savNt=variables[i].peso;
+         
+   }else if(Number(calidadNt) >= variables[i]._30 && Number(calidadNt) < variables[i]._50){
+         caNt=(20/(variables[i]._50-variables[i]._30))*calidadNt;
+         caNt-=(20/(variables[i]._50-variables[i]._30)*variables[i]._30)-30;
+         savNt=variables[i].peso;
+         
+   }
+   else if(Number(calidadNt) >= variables[i]._50 && Number(calidadNt) < variables[i]._60){
+         caNt=(10/(variables[i]._60-variables[i]._50))*calidadNt;
+         caNt-=(10/(variables[i]._60-variables[i]._50)*variables[i]._50)-50;
+         savNt=variables[i].peso;
+         
+   }else if(Number(calidadNt) >= variables[i]._60 && Number(calidadNt) < variables[i]._80){
+         caNt=(20/(variables[i]._80-variables[i]._60))*calidadNt;
+         caNt-=(20/(variables[i]._80-variables[i]._60)*variables[i]._60)-60;
+         savNt=variables[i].peso;
+         
+   }else if(Number(calidadNt) >= variables[i]._80 && Number(calidadNt) < variables[i]._100){
+         caNt=(20/(variables[i]._100-variables[i]._80))*calidadNt;
+         caNt-=(20/(variables[i]._100-variables[i]._80)*variables[i]._80)-80;
+         savNt=variables[i].peso;
+         
+   }else if(Number(calidadNt) >= variables[i]._100 && Number(calidadNt) < variables[i]._120){
+         caNt=(20/(variables[i]._120-variables[i]._100))*calidadNt;
+         caNt-=(20/(variables[i]._120-variables[i]._100)*variables[i]._100)-100;
+         savNt=variables[i].peso;
+         
+   }else if(Number(calidadNt) >= variables[i]._120 && Number(calidadNt) < variables[i]._150){
+         caNt=(30/(variables[i]._150-variables[i]._120))*calidadNt;
+         caNt-=(30/(variables[i]._150-variables[i]._120)*variables[i]._120)-120;
+         savNt=variables[i].peso;
+        
+   }else if(Number(calidadNt) >= variables[i]._150){
+         caNt=150;
+         savNt=variables[i].peso;
+         
+   }else {caNt=0;}
+
+      break;
+      case 8:
+      if(Number(insatisfechosNt) < variables[1]._0 && Number(insatisfechosNt) > variables[1]._30)
+   {
+         insaNt=(30/(variables[i]._30-variables[i]._0))*insatisfechosNt;
+         insaNt-=(30/(variables[i]._30-variables[i]._0)*variables[i]._0);
+         insavNt=variables[i].peso;
+
+   }else if(Number(insatisfechosNt) <= variables[i]._30 && Number(insatisfechosNt) > variables[i]._50){
+         insaNt=(20/(variables[i]._50-variables[i]._30))*insatisfechosNt;
+         insaNt-=(20/(variables[i]._50-variables[i]._30)*variables[i]._30)-30;
+         insavNt=variables[i].peso;
+
+   }
+   else if(Number(insatisfechosNt) <= variables[i]._50 && Number(insatisfechosNt) > variables[i]._60){
+         insaNt=(10/(variables[i]._60-variables[i]._50))*insatisfechosNt;
+         insaNt-=(10/(variables[i]._60-variables[i]._50)*variables[i]._50)-50;
+         insavNt=variables[i].peso;
+
+   }else if(Number(insatisfechosNt) <= variables[i]._60 && Number(insatisfechosNt) > variables[i]._80){
+         insaNt=(20/(variables[i]._80-variables[i]._60))*insatisfechosNt;
+         insaNt-=(20/(variables[i]._80-variables[i]._60)*variables[i]._60)-60;
+         insavNt=variables[i].peso;
+      
+
+   }else if(Number(insatisfechosNt) <= variables[i]._80 && Number(insatisfechosNt) > variables[i]._100){
+         insaNt=(20/(variables[i]._100-variables[i]._80))*insatisfechosNt;
+         insaNt-=(20/(variables[i]._100-variables[i]._80)*variables[i]._80)-80;
+         insavNt=variables[i].peso;
+
+   }else if(Number(insatisfechosNt) <= variables[i]._100 && Number(insatisfechosNt) > variables[i]._120){
+         insaNt=(20/(variables[i]._120-variables[i]._100))*insatisfechosNt;
+         insaNt-=(20/(variables[i]._120-variables[i]._100)*variables[i]._100)-100;
+         insavNt=variables[i].peso;
+
+   }else if(Number(insatisfechosNt) <= variables[i]._120 && Number(insatisfechosNt) > variables[i]._150){
+         insaNt=(30/(variables[i]._150-variables[i]._120))*insatisfechosNt;
+         insaNt-=(30/(variables[i]._150-variables[i]._120)*variables[i]._120)-120;
+         insavNt=variables[i].peso;
+
+   }else if(Number(insatisfechosNt) <= variables[i]._150){
+         insaNt=150;insavNt=variables[i].peso;
+         
+   }else {insaNt=0;}
+
+      break;
+      case 9:
+      if(Number(NDANt) > variables[i]._0 && Number(NDANt) < variables[i]._30)
+   {
+         ndaNt=(30/(variables[i]._30-variables[i]._0))*NDANt;
+         ndaNt-=(30/(variables[i]._30-variables[i]._0)*variables[i]._0);
+         ndavNt=variables[i].peso;
+
+   }else if(Number(NDANt) >= variables[i]._30 && Number(NDANt) < variables[i]._50){
+         ndaNt=(10/(variables[i]._50-variables[i]._30))*NDANt;
+         ndaNt-=(10/(variables[i]._50-variables[i]._30)*variables[i]._30)-30;
+         ndavNt=variables[i].peso;
+   }
+   else if(Number(NDANt) >= variables[i]._50 && Number(NDANt) < variables[i]._60){
+         ndaNt=(10/(variables[i]._60-variables[i]._50))*NDANt;
+         ndaNt-=(10/(variables[i]._60-variables[i]._50)*variables[i]._50)-50;
+         ndavNt=variables[i].peso;
+   }else if(Number(NDANt) >= variables[i]._60 && Number(NDANt) < variables[i]._80){
+         ndaNt=(20/(variables[i]._80-variables[i]._60))*NDANt;
+         ndaNt-=(20/(variables[i]._80-variables[i]._60)*variables[i]._60)-60;
+         ndavNt=variables[i].peso;
+
+   }else if(Number(NDANt) >= variables[i]._80 && Number(NDANt) < variables[i]._100){
+         ndaNt=(20/(variables[i]._100-variables[i]._80))*NDANt;
+         ndaNt-=(20/(variables[i]._100-variables[i]._80)*variables[i]._80)-80;
+         ndavNt=variables[i].peso;
+
+   }else if(Number(NDANt) >= variables[i]._100 && Number(NDANt) < variables[i]._120){
+         ndaNt=(20/(variables[i]._120-variables[i]._100))*NDANt;
+         ndaNt-=(20/(variables[i]._120-variables[i]._100)*variables[i]._100)-100;
+         ndavNt=variables[i].peso;
+
+   }else if(Number(NDANt) >= variables[i]._120 && Number(NDANt) < variables[i]._150){
+         ndaNt=(30/(variables[i]._150-variables[i]._120))*NDANt;
+         ndaNt-=(30/(variables[i]._150-variables[i]._120)*variables[i]._120)-120;
+         ndavNt=variables[i].peso;
+
+   }else if(Number(NDANt) >= variables[i]._150){
+         ndaNt=150;ndavNt=variables[i].peso;
+         
+
+   }else {ndaNt=0;}
+
+      break;
+      case 10:
+      if(Number(NDSNt) > variables[i]._0 && Number(NDSNt) < variables[i]._30)
+   {
+         ndsNt=(30/(variables[i]._30-variables[i]._0))*NDSNt;
+         ndsNt-=(30/(variables[i]._30-variables[i]._0)*variables[i]._0);
+         ndsvNt=variables[i].peso;
+
+   }else if(Number(NDSNt) >= variables[i]._30 && Number(NDSNt) < variables[i]._50){
+         ndsNt=(20/(variables[i]._50-variables[i]._30))*NDSNt;
+         ndsNt-=(20/(variables[i]._50-variables[i]._30)*variables[i]._30)-30;
+         ndsvNt=variables[i].peso;
+   }
+   else if(Number(NDSNt) >= variables[i]._50 && Number(NDSNt) < variables[i]._60){
+         ndsNt=(10/(variables[i]._60-variables[i]._50))*NDSNt;
+         ndsNt-=(10/(variables[i]._60-variables[i]._50)*variables[i]._50)-50;
+         ndsvNt=variables[i].peso;
+   }else if(Number(NDSNt) >= variables[i]._60 && Number(NDSNt) < variables[i]._80){
+         ndsNt=(20/(variables[i]._80-variables[i]._60))*NDSNt;
+         ndsNt-=(20/(variables[i]._80-variables[i]._60)*variables[i]._60)-60;
+         ndsvNt=variables[i].peso;
+
+   }else if(Number(NDSNt) >= variables[i]._80 && Number(NDSNt) < variables[i]._100){
+         ndsNt=(20/(variables[i]._100-variables[i]._80))*NDSNt;
+         ndsNt-=(20/(variables[i]._100-variables[i]._80)*variables[i]._80)-80;
+         ndsvNt=variables[i].peso;
+
+   }else if(Number(NDSNt) >= variables[i]._100 && Number(NDSNt) < variables[i]._120){
+         ndsNt=(20/(variables[i]._120-variables[i]._100))*NDSNt;
+         ndsNt-=(20/(variables[i]._120-variables[i]._100)*variables[i]._100)-100;
+         ndsvNt=variables[i].peso;
+
+   }else if(Number(NDSNt) >= variables[i]._120 && Number(NDSNt) < variables[i]._150){
+         ndsNt=(30/(variables[i]._150-variables[i]._120))*NDSNt;
+         ndsNt-=(30/(variables[i]._150-variables[i]._120)*variables[i]._120)-120;
+         ndsvNt=variables[i].peso;
+
+   }else if(Number(NDSNt) >= variables[i]._150){
+         ndsNt=150;
+         ndsvNt=variables[i].peso;
+
+   }else {ndsNt=0;}
+
+      break;
+      case 11:
+      if(Number(FCRNt) > variables[i]._0 && Number(FCRNt) < variables[i]._30)
+   {
+         fcrNt=(30/(variables[i]._30-variables[i]._0))*FCRNt;
+         fcrNt-=(30/(variables[i]._30-variables[i]._0)*variables[i]._0);
+         fcrvNt=variables[i].peso;
+
+   }else if(Number(FCRNt) >= variables[i]._30 && Number(FCRNt) < variables[i]._50){
+         fcrNt=(20/(variables[i]._50-variables[i]._30))*FCRNt;
+         fcrNt-=(20/(variables[i]._50-variables[i]._30)*variables[i]._30)-30;
+         fcrvNt=variables[i].peso;
+   }
+   else if(Number(FCRNt) >= variables[i]._50 && Number(FCRNt) < variables[i]._60){
+         fcrNt=(10/(variables[i]._60-variables[i]._50))*FCRNt;
+         fcrNt-=(10/(variables[i]._60-variables[i]._50)*variables[i]._50)-50;
+         fcrvNt=variables[i].peso;
+   }else if(Number(FCRNt) >= variables[i]._60 && Number(FCRNt) < variables[i]._80){
+         fcrNt=(20/(variables[i]._80-variables[i]._60))*FCRNt;
+         fcrNt-=(20/(variables[i]._80-variables[i]._60)*variables[i]._60)-60;
+         fcrvNt=variables[i].peso;
+
+   }else if(Number(FCRNt) >= variables[i]._80 && Number(FCRNt) < variables[i]._100){
+         fcrNt=(20/(variables[i]._100-variables[i]._80))*FCRNt;
+         fcrNt-=(20/(variables[i]._100-variables[i]._80)*variables[i]._80)-80;
+         fcrvNt=variables[i].peso;
+
+   }else if(Number(FCRNt) >= variables[i]._100 && Number(FCRNt) < variables[i]._120){
+         fcrNt=(20/(variables[i]._120-variables[i]._100))*FCRNt;
+         fcrNt-=(20/(variables[i]._120-variables[i]._100)*variables[i]._100)-100;
+         fcrvNt=variables[i].peso;
+         console.log("***********c1***********");
+
+   }else if(Number(FCRNt) >= variables[i]._120 && Number(FCRNt) < variables[i]._150){
+         fcrNt=(30/(variables[i]._150-variables[i]._120))*FCRNt;
+         fcrNt-=(30/(variables[i]._150-variables[i]._120)*variables[i]._120)-120;
+         fcrvNt=variables[i].peso;
+
+   }else if(Number(FCRNt) >= variables[i]._150){
+         fcrNt=150;fcrvNt=variables[i].peso;
+
+   }else {fcrNt=0;console.log("***********c2***********"+FCRNt);}
+
+      break;
+      case 12:
+      if(Number(AVNt) < variables[i]._0 && Number(AVNt) > variables[i]._30)
+   {
+         avNt=(30/(variables[i]._30-variables[i]._0))*AVNt;
+         avNt-=(30/(variables[i]._30-variables[i]._0)*variables[i]._0);
+         avvNt=variables[i].peso;
+
+   }else if(Number(AVNt) <= variables[i]._30 && Number(AVNt) > variables[i]._50){
+         avNt=(20/(variables[i]._50-variables[i]._30))*AVNt;
+         avNt-=(20/(variables[i]._50-variables[i]._30)*variables[i]._30)-30;
+         avvNt=variables[i].peso;
+
+   }
+   else if(Number(AVNt) <= variables[i]._50 && Number(AVNt) > variables[i]._60){
+         avNt=(10/(variables[i]._60-variables[i]._50))*AVNt;
+         avNt-=(10/(variables[i]._60-variables[i]._50)*variables[i]._50)-50;
+         avvNt=variables[i].peso;
+
+   }else if(Number(AVNt) <= variables[i]._60 && Number(AVNt) > variables[i]._80){
+         avNt=(20/(variables[i]._80-variables[i]._60))*AVNt;
+         avNt-=(20/(variables[i]._80-variables[i]._60)*variables[i]._60)-60;
+         avvNt=variables[i].peso;
+      
+
+   }else if(Number(AVNt) <= variables[i]._80 && Number(AVNt) > variables[i]._100){
+         avNt=(20/(variables[i]._100-variables[i]._80))*AVNt;
+         avNt-=(20/(variables[i]._100-variables[i]._80)*variables[i]._80)-80;
+         avvNt=variables[i].peso;
+
+   }else if(Number(AVNt) <= variables[i]._100 && Number(AVNt) > variables[i]._120){
+         avNt=(20/(variables[i]._120-variables[i]._100))*AVNt;
+         avNt-=(20/(variables[i]._120-variables[i]._100)*variables[i]._100)-100;
+         avvNt=variables[i].peso;
+
+   }else if(Number(AVNt) <= variables[i]._120 && Number(AVNt) > variables[i]._150){
+         avNt=(30/(variables[i]._150-variables[i]._120))*AVNt;
+         avNt-=(30/(variables[i]._150-variables[i]._120)*variables[i]._120)-120;
+         avvNt=variables[i].peso;
+
+   }else if(Number(AVNt) <= variables[i]._150){
+         avNt=150;avv=variables[i].peso;
+         
+   }else {avNt=0;}
+
+      break;
        default:
            console.log("no relevante");
+          
    }
 }
  
@@ -589,6 +858,29 @@ if (sumaI >= 150){
 var rvMesI=0;
 rvMesI=(rvI*julioI)/100;
 
+saNt=((caNt*savNt)+(insaNt*insavNt))/100;
+caccNt=((ndaNt*ndavNt)+(ndsNt*ndsvNt))/100;
+cagesNt=((fcrNt*fcrvNt)+(avNt*avvNt))/100;
+var sumaNt=saNt+caccNt+cagesNt;
+var rvNt=0;
+
+if (sumaNt >= 150){
+   rvNt=sumaNt/10;
+}else if (sumaNt > 80 && sumaNt <= 100){
+   rvNt=(3*sumaNt/20)-5;
+}else if (sumaNt > 60 && sumaNt <= 80){
+   rvNt=(7*sumaNt/20)-21;
+}else if (sumaNt > 49 && sumaNt <= 60){
+   rvNt=0;
+}else if (sumaNt > 30 && sumaNt <= 49){
+   rvNt=(0.5*sumaNt)-25;
+}else if (sumaNt <= 30){
+   rvNt=-10;
+}
+
+var rvMesNt=0;
+rvMesNt=(rvNt*julioNtA)/100;
+
  %>
 
 <div class="container">
@@ -610,29 +902,41 @@ rvMesI=(rvI*julioI)/100;
     <tbody>
     <tr>
     <td> Indicador calidad</td>
-    <td> <%=  ca.toFixed(2)%></td><td> <%=  caI.toFixed(2)%></td></tr>
+    <td> <%=  ca.toFixed(2)%></td><td> <%=  caI.toFixed(2)%></td>
+    <td> <%=  caNt.toFixed(2)%></td></tr>
     <td>Indicador insatisfechos</td>
-    <td> <%= insa.toFixed(2)%></td><td> <%= insaI.toFixed(2)%></td></tr>
+    <td> <%= insa.toFixed(2)%></td><td> <%= insaI.toFixed(2)%></td>
+    <td> <%= insaNt.toFixed(2)%></td></tr>
     <td>Indicador NDA </td>
-    <td> <%= nda.toFixed(2)%></td><td> <%= ndaI.toFixed(2)%></td></tr>
+    <td> <%= nda.toFixed(2)%></td><td> <%= ndaI.toFixed(2)%></td>
+    <td> <%= ndaNt.toFixed(2)%></td></tr>
     <td>Indicador NDS </td>
-    <td> <%= nds.toFixed(2)%></td><td> <%= ndsI.toFixed(2)%></td></tr>
+    <td> <%= nds.toFixed(2)%></td><td> <%= ndsI.toFixed(2)%></td>
+    <td> <%= ndsNt.toFixed(2)%></td></tr>
     <td>Indicador FCR </td>
-    <td> <%= fcr.toFixed(2)%></td><td> <%= fcrI.toFixed(2)%></td></tr>
+    <td> <%= fcr.toFixed(2)%></td><td> <%= fcrI.toFixed(2)%></td>
+    <td> <%= fcrNt.toFixed(2)%></td></tr>
     <td>Indicador AV/Boletintes </td>
-    <td> <%= av.toFixed(2)%></td><td> <%= avI.toFixed(2)%></td></tr>
+    <td> <%= av.toFixed(2)%></td><td> <%= avI.toFixed(2)%></td>
+    <td> <%= avNt.toFixed(2)%></td></tr>
     <td>SATISFACCION CLIENTE </td>
-    <td> <%= sa.toFixed(2)%></td><td> <%= saI.toFixed(2)%></td></tr>
+    <td> <%= sa.toFixed(2)%></td><td> <%= saI.toFixed(2)%></td>
+    <td> <%= saNt.toFixed(2)%></td></tr>
     <td>CALIDAD ACCESO </td>
-    <td> <%= cacc.toFixed(2)%></td><td> <%= caccI.toFixed(2)%></td></tr>
+    <td> <%= cacc.toFixed(2)%></td><td> <%= caccI.toFixed(2)%></td>
+    <td> <%= caccNt.toFixed(2)%></td></tr>
     <td>CALIDAD GESTION </td>
-    <td> <%= cages.toFixed(2)%></td><td> <%= cagesI.toFixed(2)%></td></tr>
+    <td> <%= cages.toFixed(2)%></td><td> <%= cagesI.toFixed(2)%></td>
+    <td> <%= cagesNt.toFixed(2)%></td></tr>
     <td>Resultado Porc. Variable </td>
-    <td> <%= suma.toFixed(2) %></td><td> <%= sumaI.toFixed(2) %></td></tr>
+    <td> <%= suma.toFixed(2) %></td><td> <%= sumaI.toFixed(2) %></td>
+    <td> <%= sumaNt.toFixed(2) %></td></tr>
     <td>% Retribución  Variable </td>
-    <td> <%= rv.toFixed(2) %></td><td> <%= rvI.toFixed(2) %></td></tr>
+    <td> <%= rv.toFixed(2) %></td><td> <%= rvI.toFixed(2) %></td>
+    <td> <%= rvNt.toFixed(2) %></td></tr>
     <td>Retribución  Variable  MES </td>
-    <td> <%= rvMes.toFixed(2) %></td><td> <%= rvMesI.toFixed(2) %></td></tr>
+    <td> <%= rvMes.toFixed(2) %></td><td> <%= rvMesI.toFixed(2) %></td>
+    <td> <%= rvMesNt.toFixed(2) %></td></tr>
 
 
 </tbody>    

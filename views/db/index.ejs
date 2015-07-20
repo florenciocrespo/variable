@@ -1,7 +1,7 @@
 <div class="container">
   
   <table class="responsive-table">
-    <caption>Top 4 Tablas Variable</caption>
+    <caption>Top 4 Tablas Variable BA</caption>
   	<thead>
       <tr>
         <th>#</th>
@@ -20,7 +20,7 @@
       </tr>
     </thead>
     <tbody>
-		<% var i; for (i=0; i < variables.length; i++) {%>
+		<% var i; for (i=0; i < 6; i++) {%>
         	<tr>
 		    <td><%=variables[i].id%></td>
 		    <td><%=variables[i].indicador%></td>
@@ -38,6 +38,49 @@
 		    </tr>
 		<%}%>
 	<tbody>
+  </table>
+</div>
+
+<div class="container">
+  
+  <table class="responsive-table">
+    <caption>Top 4 Tablas Variable NT</caption>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Indicador</th>
+        <th>Peso</th>
+        <th>0</th>
+        <th>30</th>
+        <th>50</th>
+        <th>60</th>
+        <th>80</th>
+        <th>100</th>
+        <th>120</th>
+        <th>150</th>
+        <th>Fecha Creación</th>
+        <th>Fecha Actualización</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% var i; for (i=6; i < 12; i++) {%>
+            <tr>
+            <td><%=variables[i].id%></td>
+            <td><%=variables[i].indicador%></td>
+            <td><%=variables[i].peso%></td>
+            <td><%=variables[i]._0%></td>
+            <td><%=variables[i]._30%></td>
+            <td><%=variables[i]._50%></td>
+            <td><%=variables[i]._60%></td>
+            <td><%=variables[i]._80%></td>
+            <td><%=variables[i]._100%></td>
+            <td><%=variables[i]._120%></td>
+            <td><%=variables[i]._150%></td>
+            <td><%=variables[i].createdAt%></td>
+            <td><%=variables[i].updatedAt%></td>
+            </tr>
+        <%}%>
+    <tbody>
   </table>
 </div>
 

@@ -104,6 +104,12 @@ exports.create = function(req,res){
       NDSI = req.body.NDSI,
       FCRI = req.body.FCRI,
       AVI = req.body.AVI;
+      calidadNt = req.body.calidadNt,
+      insatisfechosNt = req.body.insatisfechosNt,
+      NDANt = req.body.NDANt,
+      NDSNt = req.body.NDSNt,
+      FCRNt = req.body.FCRNt,
+      AVNt = req.body.AVNt;
   // Quick example
    models.Variable.findAll().then(
       function(variables) {
@@ -120,6 +126,12 @@ exports.create = function(req,res){
           NDSI: NDSI,
           FCRI: FCRI,
           AVI: AVI,
+          calidadNt: calidadNt,
+          insatisfechosNt: insatisfechosNt,
+          NDANt: NDANt,
+          NDSNt: NDSNt,
+          FCRNt: FCRNt,
+          AVNt: AVNt,
           errors: []});
       }
     ).catch(function(error) { next(error);})
