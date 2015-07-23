@@ -46,8 +46,7 @@ exports.Variable = Variable;
 
 
 
-// sequelize.sync() crea las tablas de datos definidas en el modelo
-//NT
+
 
 // cat BA
 sequelize.sync().then(function() {
@@ -68,7 +67,8 @@ sequelize.sync().then(function() {
 
 });
 
-
+// sequelize.sync() crea las tablas de datos definidas en el modelo
+//NT
 sequelize.sync().then(function() {
   // success(..) ejecuta el manejador una vez creadas las tabas de la DB
 
