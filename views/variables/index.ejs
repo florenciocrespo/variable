@@ -21,7 +21,8 @@
       </tr>
     </tfoot>
     <tbody>
-      <% var i; for (i=0; i < variables.length; i++) { %>
+    <tr><td></td><td></td><td></td><td></td><td></td><td>BA</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <% var f=0;var i; for (i=0; i < variables.length; i++) { %>
       <tr>
        <td><%= variables[i].indicador%></td>
        <td><%= variables[i].peso%></td>
@@ -35,7 +36,11 @@
        <td><%= variables[i]._150%></td> 
        <td><a href="variables/<%= variables[i].id %>/edit"><button>editar</button></a></td>      
       </tr>
-      <%}%>
+      <%  f+=1; if(f ==6) {
+         %><tr><td></td><td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td>NT</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <% }
+
+      }%>
       
       
     </tbody>
