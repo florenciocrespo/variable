@@ -47,7 +47,6 @@ exports.Variable = Variable;
 
 
 
-
 // cat BA
 sequelize.sync().then(function() {
   // success(..) ejecuta el manejador una vez creadas las tabas de la DB
